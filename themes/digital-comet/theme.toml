@@ -1,0 +1,10 @@
+name = "Digital Comet"
+license = "Apache License 2.0"
+licenselink = ""
+description = "A one page HTML theme for Digital Comet."
+tags = ["freelancer", "portfolio"]
+features = ["responsive", "contact form", "portfolio", "substitutable strings"]
+
+[author]
+  name = "pieterjandesmedt"
+  homepage = "//github.com/pieterjandesmedt"

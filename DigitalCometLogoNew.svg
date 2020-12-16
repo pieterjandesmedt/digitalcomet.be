@@ -1,0 +1,127 @@
+<svg id="Comet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1102" height="384" viewBox="0 0 1102 384">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-6 {
+        font-size: 200px;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-6, .cls-7 {
+        fill: #fefffe;
+        font-family: "Myriad Pro";
+      }
+
+      .cls-2 {
+        fill: #1f1aff;
+        filter: url(#filter-2);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #6299fd;
+        filter: url(#filter-3);
+      }
+
+      .cls-4 {
+        fill: #a9dcff;
+        filter: url(#filter-4);
+      }
+
+      .cls-5 {
+        fill: #fff;
+        filter: url(#filter-5);
+      }
+
+      .cls-6 {
+        filter: url(#filter-6);
+      }
+
+      .cls-7 {
+        font-size: 72px;
+        filter: url(#filter-7);
+        text-anchor: end;
+      }
+    </style>
+    <filter id="filter" x="3" y="0" width="1099" height="184" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2c3e50"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="6.406" y="36" width="624.594" height="339.688" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ff651a"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="4.438" y="137.5" width="512.218" height="239.688" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ffb911"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="2" y="123.812" width="379.438" height="258.188" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff338"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="4" y="277" width="103" height="103" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="9" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#ffffe0"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" mode="lighten" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-6" x="385" y="72" width="122" height="72" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2c3e50"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-7" x="382" y="224" width="716" height="66" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#2c3e50"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="digital_comet" data-name="digital comet" class="cls-1" x="-5" y="142">digital comet</text>
+  <path class="cls-2" d="M42.357,279.21c-22.126,7.353-23.386,10.765-30.043,23.233S5.263,323.908,7.96,332.07s3,17.05,15.95,28.988,24.921,17.593,44.979,13.06,21.4-9.743,36.178-20.608,27.171-23.3,65.9-45.936c60.717-35.484,72.909-79.191,144.368-103.112s100.451-36.844,169.349-91.956c78.429-62.735,75.786-55.7,146.33-76.491-136.37,22.673-175.377,86.155-213.933,94.138-40.923,8.474-66.66,11.062-96.663,21.694C268.5,170.242,245.3,205.285,163.523,236.521S64.483,271.856,42.357,279.21Z"/>
+  <path class="cls-3" d="M52.007,274.5c-31.884,11.365-39.477,29.34-45.7,44.6s4.656,30.02,10.633,36.245S42.4,376.428,55.016,376.979s17.508-.2,17.508-0.2,8.669-3.313,20.978-11.651,14.807-23.431,34.34-38.615c20.765-16.143,21.516-13.99,44.756-27.852,22.762-13.576,40.4-15.456,65.73-22.948s54.139-24.815,59.456-32.072,40.623-28.084,47.088-28.73c7.582-.756,50.814-8.155,84.842-34.568,20.127-15.624,68.918-35.681,84.457-41.658,17.522-6.741-61.838,16.713-98.134,27.331-8.841,2.586-40.478,21.267-88,21.117-42.374-.134-69.479,35.947-89.784,39.622-54.315,9.831-70.232,6.956-108.089,26.1C110.671,262.7,83.892,263.135,52.007,274.5Z"/>
+  <path class="cls-4" d="M199.672,213.415c-54.269,41.65-61.485,46.684-95.043,51.874s-42.612,4.544-64.32,9.948C17.563,280.9-2.2,310.407,2.771,333.23,6.1,348.511,12.936,373.6,49.56,381.04c12.059,2.45,23.425,1.024,43.848-15s23.6-34.749,49.678-46.645,30.152-22.536,80.863-32.524,54.2-19.821,92.739-43.654-9.138,5.7-48.289,11.758-71.8,3.242-85.726,10.4,22.579-11.356,55.351-49.309,21.782-28.033,57.9-53.636,64.473-33.846,79.809-37.008c27.749-5.721-52.87,3.444-99.365,33.241C228.948,189.05,227.744,191.87,199.672,213.415Z"/>
+  <path class="cls-5" d="M67.938,310.283a22.491,22.491,0,1,1-31.461,4.866A22.459,22.459,0,0,1,67.938,310.283Z"/>
+  <text id="digital_comet_top" data-name="digital comet top" class="cls-6" x="-5" y="142">digital comet</text>
+  <text id="webdesign_-_consulting" data-name="webdesign - consulting" class="cls-7" x="1101.924" y="275"><tspan x="1101.924">webdesign - consulting</tspan></text>
+</svg>

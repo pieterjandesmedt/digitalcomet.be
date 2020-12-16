@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body id="page-top" class="{{ .Section }} has-navbar-fixed-top">
+
+	{{ partial "nav.html" . }}
+
+	<div class="container article">
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<h1>{{ .Title }}</h1>
+				{{ if .Params.img }}
+				<div class="image effect2">
+					{{ if isset .Params "clientlink" }}
+					<a href="{{ .Params.clientlink }}">
+						<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}"
+							class="img-responsive img-centered" alt="{{ .Title }}">
+					</a>
+					{{ else }}
+					<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}" class="img-responsive img-centered"
+						alt="">
+					{{ end }}
+				</div>
+				{{ end }}
+				{{ .Content }}
+				{{ if isset .Params "clientlink" }}Bezoek
+				<a href="{{ .Params.clientlink }}">
+					<i class="fas fa-link"></i> {{ .Title }}
+				</a>
+				{{ end }}
+			</div>
+		</div>
+
+		{{ $backlink := cond (ne .Section "blog") (delimit (slice .Site.BaseURL .Section) "#") (delimit (slice .Site.BaseURL .Section) "") }}
+
+		<div class="columns is-mobile section-nav">
+			<div class="column is-4-tablet is-offset-2-tablet">
+				{{if .PrevInSection}}
+				<a class="prev-link" href="{{.PrevInSection.Permalink}}">&larr; {{ .PrevInSection.Title }}</a>
+				{{else}}
+				<a class="prev-link" href="{{ $backlink }}">&larr; Terug</a>
+				{{end}}
+			</div>
+			{{ if ne .NextInSection .PrevInSection }}
+			<div class="column is-4-tablet has-text-right">
+				{{if .NextInSection}}
+				<a class="next-link" href="{{.NextInSection.Permalink}}">{{ .NextInSection.Title }} &rarr;</a>
+				{{else}}
+				<a class="next-link" href="{{ $backlink }}">Terug &rarr;</a>
+				{{end}}
+			</div>
+			{{ end }}
+		</div>
+	</div>
+
+	{{ partial "footer.html" . }}
+	{{ partial "js.html" . }}
+
+</body>
+
+</html>

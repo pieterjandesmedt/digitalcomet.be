@@ -1,0 +1,65 @@
+<section id="contact">
+	<div class="container">
+		<h2>{{ with .Site.Params.contact.title }}{{.}}{{ end }}</h2>
+		<div class="star">
+			<hr>
+			<i class="fas fa-star"></i>
+		</div>
+		<div class="columns">
+			<div class="column is-8 is-offset-2">
+				<form onsubmit="event.preventDefault(); mySubmit();" name="contactForm" id="contactForm">
+					<div class="field">
+						{{ with .Site.Params.contact.form.name.text }}<label for="name">{{.}}</label>{{ end }}
+						<div class="control has-icons-left">
+							<span class="icon is-small is-left">
+								<i class="fas fa-user"></i>
+							</span>
+							<input type="text" name="name" class="input"
+								placeholder="{{ with .Site.Params.contact.form.name.text }}{{.}}{{ end }}" id="name"
+								required
+								data-validation-required-message="{{ with .Site.Params.contact.form.name.error }}{{.}}{{ end }}">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div class="field">
+						{{ with .Site.Params.contact.form.email.text }}<label for="name">{{.}}</label>{{ end }}
+						<div class="control has-icons-left">
+							<span class="icon is-small is-left">
+								<i class="fas fa-envelope"></i>
+							</span>
+							<input type="email" name="_replyto" class="input"
+								placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" id="email"
+								required
+								data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div>
+						<input type="hidden" name="_subject" value="Aanvraag info">
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="_next" value="{{ .Site.BaseURL }}?success#contact" />
+						<input type="hidden" name="_language" value="nl" />
+					</div>
+					<div class="field">
+						{{ with .Site.Params.contact.form.message.text }}<label for="name">{{.}}</label>{{ end }}
+						<textarea rows="10" name="message" class="textarea"
+							placeholder="{{ with .Site.Params.contact.form.message.text }}{{.}}{{ end }}" id="message"
+							required
+							data-validation-required-message="{{ with .Site.Params.contact.form.message.error }}{{.}}{{ end }}"></textarea>
+						<p class="help-block text-danger"></p>
+					</div>
+					<div id="success" class="notification is-success">
+						<i class="far fa-check-circle"></i> Bedankt voor uw bericht! We nemen zo snel mogelijk contact
+						op.
+					</div>
+					<button type="submit" class="button" id="send-button">
+						<span class="icon">
+							<i class="far fa-paper-plane"></i>
+						</span>
+						<span>{{ with .Site.Params.contact.form.button.text }}{{.}}{{ end }}</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
