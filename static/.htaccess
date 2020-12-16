@@ -20,6 +20,3 @@ ErrorDocument 404 /404.html
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-RewriteCond %{HTTP_HOST} ^digitalcomet.be [NC]
-RewriteRule ^(.*)$ https://www.digitalcomet.be/$1 [L,R=301,NC]
