@@ -22,7 +22,7 @@
 						</div>
 					</div>
 					<div class="field">
-						{{ with .Site.Params.contact.form.email.text }}<label for="name">{{.}}</label>{{ end }}
+						{{ with .Site.Params.contact.form.email.text }}<label for="email">{{.}}</label>{{ end }}
 						<div class="control has-icons-left">
 							<span class="icon is-small is-left">
 								<i class="fas fa-envelope"></i>
@@ -41,7 +41,7 @@
 						<input type="hidden" name="_language" value="nl" />
 					</div>
 					<div class="field">
-						{{ with .Site.Params.contact.form.message.text }}<label for="name">{{.}}</label>{{ end }}
+						{{ with .Site.Params.contact.form.message.text }}<label for="message">{{.}}</label>{{ end }}
 						<textarea rows="10" name="message" class="textarea"
 							placeholder="{{ with .Site.Params.contact.form.message.text }}{{.}}{{ end }}" id="message"
 							required

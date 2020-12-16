@@ -7,8 +7,8 @@
 			{{ range where .Site.RegularPages.ByWeight.Reverse "Section" "portfolio" }}
 			<div class="column is-one-third">
 				<div class="image">
-					<a href="{{ .RelPermalink }}" class="portfolio-link">
-						<img src="img/portfolio/{{ .Params.img }}" class="img-responsive" title="{{ .Title }}">
+					<a href="{{ .RelPermalink }}" class="portfolio-link" title="{{ .Title }}">
+						<img data-src="img/portfolio/{{ .Params.img }}" class="img-responsive lozad" alt="{{ .Title }}" title="{{ .Title }}">
 						<i class="fa fa-search-plus fa-3x"></i>
 					</a>
 				</div>

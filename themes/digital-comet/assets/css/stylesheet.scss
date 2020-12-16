@@ -24,7 +24,7 @@ p {
 }
 
 p.small {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 a,
@@ -32,23 +32,39 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    outline: 0;
-    color: $orange;
+	outline: 0;
+	color: $orange;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-    text-transform: uppercase;
-    font-family: "Myriad Pro", "Helvetica Neue",Helvetica,Arial,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1.1em; }
-h6 { font-size: 1em; }
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 1.1em;
+}
+h6 {
+	font-size: 1em;
+}
 
 strong {
 	color: inherit;
@@ -67,18 +83,21 @@ strong {
 	ul {
 		list-style: disc;
 		margin-left: 1em;
-		margin: .5em 2em 1em;
+		margin: 0.5em 2em 1em;
 	}
 
 	pre {
-		margin-bottom: .5em;
+		margin-bottom: 0.5em;
 	}
 
 	.image {
 		margin-bottom: 2em;
 	}
 
-	h2, h3, h4, h5 {
+	h2,
+	h3,
+	h4,
+	h5 {
 		margin-top: 2em;
 	}
 
@@ -93,11 +112,11 @@ strong {
 
 			li {
 				list-style-type: none;
-				margin-bottom: .5em;
+				margin-bottom: 0.5em;
 			}
 		}
 
-		&+ul {
+		& + ul {
 			margin-left: calc(1em + 5px);
 			margin-bottom: 1em;
 
@@ -105,7 +124,7 @@ strong {
 				list-style-type: none;
 
 				&:before {
-					content: '— '
+					content: "— ";
 				}
 			}
 		}
@@ -113,7 +132,8 @@ strong {
 }
 
 .services .article {
-	p:nth-of-type(1), p:nth-of-type(2) {
+	p:nth-of-type(1),
+	p:nth-of-type(2) {
 		font-size: 120%;
 	}
 
@@ -126,13 +146,13 @@ strong {
 }
 
 .columns:last-child {
-    margin-bottom: -1.4rem;
+	margin-bottom: -1.4rem;
 }
 
 .columns {
-    margin-left: -1.4rem;
-    margin-right: -1.4rem;
-    margin-top: -1.4rem;
+	margin-left: -1.4rem;
+	margin-right: -1.4rem;
+	margin-top: -1.4rem;
 }
 
 .column {
@@ -143,10 +163,11 @@ strong {
 	color: $darkblue;
 }
 
-.navbar, .nav {
-	box-shadow: 0 0 10px rgba(black, .5);
-    // text-transform: uppercase;
-    font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+.navbar,
+.nav {
+	box-shadow: 0 0 10px rgba(black, 0.5);
+	// text-transform: uppercase;
+	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	background: $verydarkblue;
 
@@ -189,18 +210,21 @@ footer .row {
 }
 
 .portfolio-link {
-    display: flex;
+	display: flex;
 	position: relative;
-	background: rgba($orange, .9);
+	background: rgba($orange, 0.9);
 	position: relative;
 	justify-content: center;
 	align-items: center;
 
-	img, i, svg {
+	img,
+	i,
+	svg {
 		transition: opacity 200ms;
 	}
 
-	i, svg {
+	i,
+	svg {
 		color: white;
 		position: absolute;
 		opacity: 0;
@@ -210,7 +234,8 @@ footer .row {
 		img {
 			opacity: 0.1;
 		}
-		i, svg {
+		i,
+		svg {
 			opacity: 1;
 		}
 	}
@@ -233,11 +258,11 @@ footer .row {
 
 section {
 	padding: 4rem 0;
-
 }
 
 .index section {
-	h2, h3 {
+	h2,
+	h3 {
 		text-align: center;
 	}
 }
@@ -256,7 +281,7 @@ section#header {
 	hr {
 		background-color: $darkblue;
 		height: 2px;
-		&+svg {
+		& + svg {
 			position: relative;
 			top: -2.25em;
 			color: $darkblue;
@@ -268,7 +293,7 @@ section#header {
 
 @media screen and (max-width: 399px) {
 	.star {
-		hr+svg {
+		hr + svg {
 			top: -2em;
 		}
 	}
@@ -287,11 +312,10 @@ section#header {
 	}
 
 	.star {
-
 		hr {
 			background-color: white;
 
-			&+svg {
+			& + svg {
 				color: white;
 				background-color: $orange;
 			}
@@ -332,19 +356,19 @@ footer {
 		padding: 2em 0;
 		background-color: $verydarkblue;
 		text-align: center;
-		font-size: .75rem;
+		font-size: 0.75rem;
 	}
 }
 
 .btn-social {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
 	border: 2px solid #fff;
 	color: white;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 20px;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 20px;
 	line-height: 45px;
 	transition: color 300ms, background-color 300ms;
 
@@ -370,7 +394,8 @@ footer {
 	z-index: 0;
 	border: 1px solid #eee;
 
-	&:before, &:after {
+	&:before,
+	&:after {
 		z-index: -1;
 		position: absolute;
 		content: "";
@@ -378,9 +403,9 @@ footer {
 		left: 10px;
 		width: 50%;
 		top: 80%;
-		max-width:300px;
+		max-width: 300px;
 		background: white;
-		box-shadow: 0 15px 10px rgba(0,0,0,0.25);
+		box-shadow: 0 15px 10px rgba(0, 0, 0, 0.25);
 		transform: rotate(-3deg);
 	}
 
@@ -391,10 +416,18 @@ footer {
 	}
 }
 
-.input.is-active, .input.is-focused, .input:active, .input:focus,
-.textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus,
-.button.is-focused, .button:focus,
-.button.is-focused:not(:active), .button:focus:not(:active) {
+.input.is-active,
+.input.is-focused,
+.input:active,
+.input:focus,
+.textarea.is-active,
+.textarea.is-focused,
+.textarea:active,
+.textarea:focus,
+.button.is-focused,
+.button:focus,
+.button.is-focused:not(:active),
+.button:focus:not(:active) {
 	border-color: $orange;
-	box-shadow: 0 0 0 0.125em rgba($orange, .25)
+	box-shadow: 0 0 0 0.125em rgba($orange, 0.25);
 }
