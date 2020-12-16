@@ -3,7 +3,7 @@
 		<div class="navbar-brand">
 			<a class="navbar-item" href="{{ .Site.BaseURL }}#page-top">
 				{{ with .Site.Params.navigation.brand }}
-				<img src="/img/DigitalCometLogo-Comet.png" alt="{{ . }} logo">
+				<img src="/img/DigitalCometLogo-Comet.png" class="image is-24x24" alt="{{ . }} logo">
 				{{ . }}
 				{{ end }}
 			</a>
@@ -24,6 +24,7 @@
 					href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.services.title }}{{ . }}{{ end }}</a>
 				<a class="navbar-item"
 					href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</a>
+				<a class="navbar-item" href="{{ .Site.BaseURL }}blog">blog</a>
 			</div>
 		</div>
 	</div>

@@ -21,7 +21,7 @@
 						{{ range .Site.Params.footer.social.networks }}
 						<li>
 							<a href="{{ .link }}" class="btn-social btn-outline"><i
-									class="fa fa-fw {{ .icon }}" title="{{ .name }}"></i><span>{{ .name }}</span></a>
+									class="icon icon-{{ .icon }}" title="{{ .name }}"></i><span>{{ .name }}</span></a>
 						</li>
 						{{ end }}
 					</ul>
@@ -43,9 +43,10 @@
 
 {{/* for resources.Get to work, resources should be in the /assets subdirectory of your theme */}}
 
+{{ $bulma := resources.Get "css/bulma.sass" | toCSS }}
 {{ $custom := resources.Get "css/stylesheet.scss" | toCSS }}
+{{ $icons := resources.Get "css/styles.css" }}
 
-{{ $style := slice $custom | resources.Concat "css/style.css" | minify | fingerprint }}
+{{ $style := slice $bulma $custom $icons | resources.Concat "css/style.css" | minify | fingerprint }}
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">

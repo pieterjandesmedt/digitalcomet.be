@@ -49,13 +49,6 @@ googleAnalytics = "UA-115057381-1"
         # For more informtion take a look at the README.
         title = "Portfolio"
 
-        [params.portfolio.modal]
-            client = "Bezoek"
-            date = "Datum"
-            category = "Categorie"
-            buttontext = "Sluiten"
-
-
     [params.about]
         title = "Over ons"
         # The about text is splitted into a left and right column
@@ -101,17 +94,17 @@ googleAnalytics = "UA-115057381-1"
             # CSS class.
             [[params.footer.social.networks]]
 				name = "Github"
-                icon = "fab fa-github"
+                icon = "github"
                 link = "//github.com/pieterjandesmedt/"
 
             [[params.footer.social.networks]]
 				name = "StackOverflow"
-                icon = "fab fa-stack-overflow"
+                icon = "stack-overflow"
 				link = "//stackoverflow.com/users/3468592/pieterjandesmedt"
 
             [[params.footer.social.networks]]
 				name = "LinkedIn"
-                icon = "fab fa-linkedin"
+                icon = "linkedin-square"
 				link = "//www.linkedin.com/company/9216740/"
 
         [params.footer.credits]

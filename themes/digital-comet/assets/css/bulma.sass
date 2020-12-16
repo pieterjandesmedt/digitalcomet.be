@@ -1,0 +1,43 @@
+@import "bulma/sass/utilities/_all.sass";
+
+$primary: #ff8222;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+$input-focus-color: $primary;
+$input-focus-border-color: $primary;
+$input-focus-box-shadow-color: rgba($primary, 0.25);
+$input-arrow: $primary;
+
+$link: $primary;
+
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: mergeColorMaps(("primary": ($primary,$primary-invert,$primary-light,$primary-dark)),$custom-colors);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "bulma/sass/base/_all.sass";
+
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/elements/container.sass";
+@import "bulma/sass/elements/content.sass";
+@import "bulma/sass/elements/image.sass";
+@import "bulma/sass/elements/icon.sass";
+@import "bulma/sass/elements/title.sass";
+@import "bulma/sass/form/shared.sass";
+@import "bulma/sass/form/tools.sass";
+@import "bulma/sass/form/input-textarea.sass";
+@import "bulma/sass/helpers/typography.sass";
+@import "bulma/sass/components/navbar.sass";
+@import "bulma/sass/components/media.sass";
+// @import "bulma/sass/components/menu.sass";
+
+@import "bulma/sass/grid/columns.sass";

@@ -33,7 +33,6 @@ a:focus,
 a:active,
 a.active {
 	outline: 0;
-	color: $orange;
 }
 
 h1,
@@ -210,33 +209,21 @@ footer .row {
 }
 
 .portfolio-link {
-	display: flex;
+	// display: flex;
 	position: relative;
 	background: rgba($orange, 0.9);
 	position: relative;
 	justify-content: center;
 	align-items: center;
 
-	img,
-	i,
-	svg {
-		transition: opacity 200ms;
-	}
-
-	i,
-	svg {
-		color: white;
-		position: absolute;
-		opacity: 0;
+	img {
+		transition: transform 200ms;
 	}
 
 	&:hover {
 		img {
-			opacity: 0.1;
-		}
-		i,
-		svg {
-			opacity: 1;
+			transform: scale(1.1);
+			box-shadow: 0 .5em 1em rgba(0,0,0,.5);
 		}
 	}
 }
@@ -281,7 +268,7 @@ section#header {
 	hr {
 		background-color: $darkblue;
 		height: 2px;
-		& + svg {
+		& + i {
 			position: relative;
 			top: -2.25em;
 			color: $darkblue;
@@ -293,7 +280,7 @@ section#header {
 
 @media screen and (max-width: 399px) {
 	.star {
-		hr + svg {
+		hr + i {
 			top: -2em;
 		}
 	}
@@ -315,7 +302,7 @@ section#header {
 		hr {
 			background-color: white;
 
-			& + svg {
+			& + i {
 				color: white;
 				background-color: $orange;
 			}
@@ -382,52 +369,32 @@ footer {
 	}
 }
 
-.img-responsive {
-	width: 100%;
-}
+// /*==================================================
+//  * Effect 2
+//  * ===============================================*/
+// .effect2 {
+// 	position: relative;
+// 	z-index: 0;
+// 	border: 1px solid #eee;
 
-/*==================================================
- * Effect 2
- * ===============================================*/
-.effect2 {
-	position: relative;
-	z-index: 0;
-	border: 1px solid #eee;
+// 	&:before,
+// 	&:after {
+// 		z-index: -1;
+// 		position: absolute;
+// 		content: "";
+// 		bottom: 15px;
+// 		left: 10px;
+// 		width: 50%;
+// 		top: 80%;
+// 		max-width: 300px;
+// 		background: white;
+// 		box-shadow: 0 15px 10px rgba(0, 0, 0, 0.25);
+// 		transform: rotate(-3deg);
+// 	}
 
-	&:before,
-	&:after {
-		z-index: -1;
-		position: absolute;
-		content: "";
-		bottom: 15px;
-		left: 10px;
-		width: 50%;
-		top: 80%;
-		max-width: 300px;
-		background: white;
-		box-shadow: 0 15px 10px rgba(0, 0, 0, 0.25);
-		transform: rotate(-3deg);
-	}
-
-	&:after {
-		transform: rotate(3deg);
-		right: 10px;
-		left: auto;
-	}
-}
-
-.input.is-active,
-.input.is-focused,
-.input:active,
-.input:focus,
-.textarea.is-active,
-.textarea.is-focused,
-.textarea:active,
-.textarea:focus,
-.button.is-focused,
-.button:focus,
-.button.is-focused:not(:active),
-.button:focus:not(:active) {
-	border-color: $orange;
-	box-shadow: 0 0 0 0.125em rgba($orange, 0.25);
-}
+// 	&:after {
+// 		transform: rotate(3deg);
+// 		right: 10px;
+// 		left: auto;
+// 	}
+// }

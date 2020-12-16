@@ -2,7 +2,6 @@
 modalID: "ssh-and-git-on-one-dot-com"
 title: "Using SSH and Git on One.com"
 date: "2018-03-12T14:58:26+01:00"
-img: "ssh-and-git-on-one-dot-com.jpg"
 category: Web Development
 weight: 0
 ---

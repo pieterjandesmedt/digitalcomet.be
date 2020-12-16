@@ -1,13 +1,4 @@
-<script defer type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-
-<script>
-	if (window.location.href.includes('?success')) {
-		document.getElementById('success').classList.add('show');
-		document.getElementById('send-button').classList.add('hide');
-	}
-
-</script>
 
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
@@ -34,21 +25,11 @@
 			});
 		}
 
+		// Add lazy loading observer
 		const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 		observer.observe();
 
 	});
-</script>
-
-<script>
-	function mySubmit() {
-		var form = document.forms.contactForm;
-		console.log(form);
-		form.action = '//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}'.replace(/x/g, '');
-		form.method = 'post';
-		console.log(form);
-		form.submit();
-	}
 </script>
 
 {{ template "_internal/google_analytics_async.html" . }}

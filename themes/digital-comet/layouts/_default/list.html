@@ -11,15 +11,15 @@
 
 	<div class="container list">
 		<section>
-			<h1>{{ .Section }}</h1>
+			<h1 class="is-size-1">{{ .Section }}</h1>
 			{{ range .Data.Pages }}
 			<div class="columns">
-				<a href="{{ .RelPermalink }}">
-					<div class="column">
-						<h3>{{ .Title }}</h3>
-						{{ .Summary }}
-					</div>
-				</a>
+				<div class="column">
+					<h3>
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					</h3>
+					{{ .Summary }}
+				</div>
 			</div>
 			{{ end }}
 		</section>

@@ -14,22 +14,23 @@
 			<div class="column is-8 is-offset-2">
 				<h1>{{ .Title }}</h1>
 				{{ if .Params.img }}
-				<div class="image effect2">
+				<figure class="image is-5by3 effect2">
 					{{ if isset .Params "clientlink" }}
 					<a href="{{ .Params.clientlink }}">
-						<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}"
-							class="img-responsive img-centered" alt="{{ .Title }}">
+						<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">
 					</a>
 					{{ else }}
-					<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}" class="img-responsive img-centered"
-						alt="">
+					<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">
 					{{ end }}
-				</div>
+				</figure>
 				{{ end }}
 				{{ .Content }}
-				{{ if isset .Params "clientlink" }}Bezoek
-				<a href="{{ .Params.clientlink }}">
-					<i class="fas fa-link"></i> {{ .Title }}
+				{{ if isset .Params "clientlink" }}
+				<a href="{{ .Params.clientlink }}" class="button is-outlined is-primary">
+					<span class="icon">
+						<i class="icon icon-link"></i>
+					</span>
+					<span>Bezoek {{ .Title }}</span>
 				</a>
 				{{ end }}
 			</div>
