@@ -42,13 +42,3 @@
         <i class="fa fa-chevron-up"></i>
     </a>
 </div> -->
-
-{{/* for resources.Get to work, resources should be in the /assets subdirectory of your theme */}}
-
-{{ $bulma := resources.Get "css/bulma.sass" | toCSS }}
-{{ $custom := resources.Get "css/stylesheet.scss" | toCSS }}
-{{ $icons := resources.Get "css/styles.css" }}
-
-{{ $style := slice $bulma $custom $icons | resources.Concat "css/style.css" | minify | fingerprint }}
-
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">

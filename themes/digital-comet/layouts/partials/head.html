@@ -16,6 +16,22 @@
 <meta name="msapplication-config" content="/favicon/browserconfig.xml">
 <meta name="theme-color" content="#233140">
 
+{{/* for resources.Get to work, resources should be in the /assets subdirectory of your theme */}}
+
+{{ $bulma := resources.Get "css/bulma.sass" | toCSS }}
+{{ $custom := resources.Get "css/stylesheet.scss" | toCSS }}
+{{ $icons := resources.Get "css/styles.css" }}
+
+{{ $style := slice $bulma $custom $icons | resources.Concat "css/style.css" | minify | fingerprint }}
+
+<link rel="preload" href="/css/fonts/icons.eot" as="font">
+<link rel="preload" href="/css/fonts/icons.eot?#iefix" as="font">
+<link rel="preload" href="/css/fonts/icons.woff" as="font">
+<link rel="preload" href="/css/fonts/icons.ttf" as="font">
+<link rel="preload" href="/css/fonts/icons.svg#icons" as="font">
+
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+
 {{ "<!--[if lt IE 9]>" | safeHTML }}
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
