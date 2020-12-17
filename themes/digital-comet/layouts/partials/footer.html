@@ -21,7 +21,7 @@
 						{{ range .Site.Params.footer.social.networks }}
 						<li>
 							<a href="{{ .link }}" class="btn-social btn-outline">
-								<i class="icon icon-{{ .icon }}"></i>
+								<i class="icon {{ .icon }}"></i>
 								<span>{{ .name }}</span>
 							</a>
 						</li>
