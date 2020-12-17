@@ -1,5 +1,4 @@
 # Site settings
-baseurl = "https://www.digitalcomet.be/"
 languageCode = "nl-be"
 title = "Digital Comet"
 theme = "digital-comet"

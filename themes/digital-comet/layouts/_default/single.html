@@ -17,10 +17,10 @@
 				<figure class="image is-5by3 effect2">
 					{{ if isset .Params "clientlink" }}
 					<a href="{{ .Params.clientlink }}">
-						<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">
+						<img src="/img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">
 					</a>
 					{{ else }}
-					<img src="{{ .Site.BaseURL }}img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">
+					<img src="/img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">
 					{{ end }}
 				</figure>
 				{{ end }}
@@ -36,7 +36,7 @@
 			</div>
 		</div>
 
-		{{ $backlink := cond (ne .Section "blog") (delimit (slice .Site.BaseURL .Section) "#") (delimit (slice .Site.BaseURL .Section) "") }}
+		{{ $backlink := cond (ne .Section "blog") (delimit (slice "/" .Section) "#") (delimit (slice "/" .Section) "") }}
 
 		<div class="columns is-mobile section-nav">
 			<div class="column is-4-tablet is-offset-2-tablet">

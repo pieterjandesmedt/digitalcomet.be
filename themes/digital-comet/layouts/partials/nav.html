@@ -1,7 +1,7 @@
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 	<div class="container">
 		<div class="navbar-brand">
-			<a class="navbar-item" href="{{ .Site.BaseURL }}#page-top">
+			<a class="navbar-item" href="/#page-top">
 				{{ with .Site.Params.navigation.brand }}
 				<img src="/img/DigitalCometLogo-Comet.png" class="image is-24x24" alt="{{ . }} logo">
 				{{ . }}
@@ -17,14 +17,14 @@
 		<div class="navbar-menu" id="navMenu">
 			<div class="navbar-end">
 				<a class="navbar-item"
-					href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.about.title }}{{ . }}{{ end }}</a>
+					href="/#about">{{ with .Site.Params.about.title }}{{ . }}{{ end }}</a>
 				<a class="navbar-item"
-					href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.portfolio.title }}{{ . }}{{ end }}</a>
+					href="/#portfolio">{{ with .Site.Params.portfolio.title }}{{ . }}{{ end }}</a>
 				<a class="navbar-item"
-					href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.services.title }}{{ . }}{{ end }}</a>
+					href="/#services">{{ with .Site.Params.services.title }}{{ . }}{{ end }}</a>
 				<a class="navbar-item"
-					href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</a>
-				<a class="navbar-item" href="{{ .Site.BaseURL }}blog">blog</a>
+					href="/#contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</a>
+				<a class="navbar-item" href="/blog">blog</a>
 			</div>
 		</div>
 	</div>
