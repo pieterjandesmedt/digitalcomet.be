@@ -1,4 +1,4 @@
-<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
@@ -24,12 +24,22 @@
 				});
 			});
 		}
-
-		// Add lazy loading observer
-		const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-		observer.observe();
-
 	});
+
+	// Add lazy loading observer
+	const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+	observer.observe();
+
+	// https://github.com/ApoorvSaxena/lozad.js/issues/188
+	const images = document.getElementsByClassName('lozad');
+	for (const image of images) {
+		if (!image.getAttribute('data-background-image')) {
+			image.onload = function () {
+				this.setAttribute('data-fully-loaded', true);
+			};
+		}
+	}
+
 </script>
 
 {{ template "_internal/google_analytics_async.html" . }}

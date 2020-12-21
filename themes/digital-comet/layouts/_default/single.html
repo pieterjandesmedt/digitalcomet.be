@@ -14,10 +14,10 @@
 			<div class="column is-8 is-offset-2">
 				<h1>{{ .Title }}</h1>
 				{{ if .Params.img }}
-				<figure class="image is-5by3 effect2">
+				<figure class="image is-5by3">
 					{{ if isset .Params "clientlink" }}
 					<a href="{{ .Params.clientlink }}">
-						<img src="/img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">
+						<img src="/img/portfolio/{{ .Params.img }}" class="lozad" alt="{{ .Title }}">
 					</a>
 					{{ else }}
 					<img src="/img/portfolio/{{ .Params.img }}" alt="{{ .Title }}">

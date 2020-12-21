@@ -7,7 +7,7 @@
 		</div>
 		<div class="columns">
 			<div class="column is-8 is-offset-2">
-				<form name="digitalcomet.be contact" action="/pages/success" id="contactForm" data-netlify="true">
+				<form name="digitalcomet.be contact" action="/pages/success" netlify-honeypot="phonenumber" id="contactForm" data-netlify="true">
 					<div class="field">
 						{{ with .Site.Params.contact.form.name.text }}<label for="name">{{.}}</label>{{ end }}
 						<div class="control has-icons-left">
@@ -34,6 +34,7 @@
 							<p class="help-block text-danger"></p>
 						</div>
 					</div>
+					<label class="is-hidden">Don’t fill this out if you’re human: <input name="phonenumber" /></label>
 					<div class="field">
 						{{ with .Site.Params.contact.form.message.text }}<label for="message">{{.}}</label>{{ end }}
 						<textarea rows="10" name="message" class="textarea"
