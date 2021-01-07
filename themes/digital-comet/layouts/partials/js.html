@@ -24,21 +24,21 @@
 				});
 			});
 		}
+
+		// https://github.com/ApoorvSaxena/lozad.js/issues/188
+		const images = document.getElementsByClassName('lozad');
+		for (const image of images) {
+			if (!image.getAttribute('data-background-image')) {
+				image.onload = function () {
+					this.setAttribute('data-fully-loaded', true);
+				};
+			}
+		}
 	});
 
 	// Add lazy loading observer
 	const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 	observer.observe();
-
-	// https://github.com/ApoorvSaxena/lozad.js/issues/188
-	const images = document.getElementsByClassName('lozad');
-	for (const image of images) {
-		if (!image.getAttribute('data-background-image')) {
-			image.onload = function () {
-				this.setAttribute('data-fully-loaded', true);
-			};
-		}
-	}
 
 </script>
 
