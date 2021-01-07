@@ -29,9 +29,13 @@
 		const images = document.getElementsByClassName('lozad');
 		for (const image of images) {
 			if (!image.getAttribute('data-background-image')) {
-				image.onload = function () {
-					this.setAttribute('data-fully-loaded', true);
-				};
+				if (image.complete) {
+					image.setAttribute('data-fully-loaded', true);
+				} else {
+					image.onload = function () {
+						this.setAttribute('data-fully-loaded', true);
+					};
+				}
 			}
 		}
 	});
